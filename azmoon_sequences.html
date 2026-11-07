@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>آزمون دنباله‌های حسابی و هندسی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--cd:#fff;--tx:#1b2333;--mu:#5b6578;--ac:#2f5fd0;--a2:#e8eefc;--bd:#d6dcea;--ok:#1b8a4b;--bad:#c23b3b;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--cd:#1c212c;--tx:#e8ecf4;--mu:#9aa5ba;--ac:#7ba0ff;--a2:#26304a;--bd:#323a4d;--ok:#4cc582;--bad:#ff7b7b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12151c;--cd:#1c212c;--tx:#e8ecf4;--mu:#9aa5ba;--ac:#7ba0ff;--a2:#26304a;--bd:#323a4d;--ok:#4cc582;--bad:#ff7b7b;color-scheme:dark}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9;user-select:none;-webkit-user-select:none}
+input{user-select:text;-webkit-user-select:text}
+.w{max-width:680px;margin:0 auto;padding:16px}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:20px;margin-bottom:14px}
+h1{font-size:1.3rem;margin:0 0 6px}h2{font-size:1.1rem;margin:0 0 8px}
+.mu{color:var(--mu);font-size:.9rem}
+label{display:block;margin:12px 0 4px;font-weight:700}
+input{width:100%;box-sizing:border-box;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+button{font:inherit;cursor:pointer}
+.go{width:100%;margin-top:16px;padding:13px;border:0;border-radius:10px;background:var(--ac);color:#fff;font-weight:700}
+.go:disabled{opacity:.5}
+.err{color:var(--bad);margin-top:8px;min-height:1.5em}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+#tmr{font-weight:700;font-size:1.2rem;direction:ltr;background:var(--a2);padding:2px 12px;border-radius:8px}
+#tmr.low{color:var(--bad)}
+.pb{height:6px;background:var(--a2);border-radius:4px;margin-bottom:14px;overflow:hidden}
+#bar{height:100%;background:var(--ac);width:0;transition:width .3s}
+.qt{font-size:1.05rem;margin-bottom:12px}
+.eq{text-align:center;font-size:1.2rem;margin:10px 0;overflow-x:auto}
+.opt{display:block;width:100%;text-align:right;padding:13px 14px;margin-bottom:10px;border:1px solid var(--bd);border-radius:10px;background:var(--cd);color:var(--tx)}
+.opt:hover:not(:disabled){border-color:var(--ac);background:var(--a2)}
+.opt.sel{border-color:var(--ac);background:var(--a2);font-weight:700}
+.sc{text-align:center}.big{font-size:2.6rem;font-weight:700;color:var(--ac);direction:ltr}
+.rq{border-right:5px solid var(--bad)}.rq.ok{border-right-color:var(--ok)}
+.row{margin:6px 0}.ok-t{color:var(--ok);font-weight:700}.bad-t{color:var(--bad);font-weight:700}
+#warn{background:var(--bad);color:#fff;border-radius:10px;padding:8px 12px;margin-bottom:10px;display:none}
+.hd{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;padding:4px 0}.fr{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 4px;line-height:1.5}.fr>span:first-child{border-bottom:1.5px solid currentColor;padding:0 5px}.fr>span:last-child{padding:0 5px}
+.ft{text-align:center;color:var(--mu);font-size:.85rem;padding:8px}
+</style></head><body><div class="w">
+
+
+<section id="s0"><div class="cd">
+<h1>آزمون دنباله‌های حسابی و هندسی</h1>
+<div class="mu">ریاضی پایهٔ دهم ـ فصل اول: مجموعه، الگو و دنباله (درس ۴: دنباله‌های حسابی و هندسی)</div>
+<ul class="mu"><li>۳ سؤال چهارگزینه‌ای، کل نمره ۱۰</li><li><b>زمان کل آزمون: ۲۰ دقیقه</b> (تایمر بعد از شروع بالای صفحه نمایش داده می‌شود و متوقف نمی‌شود)</li><li>اگر گوشی خاموش شد یا صفحه بسته شد، با باز کردن دوبارهٔ همین لینک (در همان مرورگر) آزمون از همان‌جا ادامه پیدا می‌کند؛ ولی زمان با ساعت واقعی حساب می‌شود و متوقف نمی‌ماند</li><li>هر سؤال یک پاسخ دارد و پس از انتخاب گزینه، قابل تغییر نیست</li><li>هر نفر فقط یک بار می‌تواند شرکت کند</li><li>با پایان زمان، آزمون بسته می‌شود و نمرهٔ پاسخ‌های داده‌شده ثبت می‌شود</li></ul>
+<label for="fn">نام</label><input id="fn" autocomplete="off">
+<label for="ln">نام خانوادگی</label><input id="ln" autocomplete="off">
+<div class="err" id="err"></div>
+<button class="go" id="go">شروع آزمون</button>
+</div></section>
+
+<section id="s1" hidden><div class="cd">
+<div class="hd"><div class="top"><b id="qn"></b><span>⏱ زمان باقی‌مانده: <b id="tmr"></b></span></div><div class="pb"><div id="bar"></div></div></div>
+<div class="qt" id="qt"></div>
+<div id="opts"></div>
+</div></section>
+
+<section id="s2" hidden>
+<div class="cd sc"><h1>کارنامه آزمون</h1><div id="who"></div><div class="mu" id="meta"></div>
+<div class="big" id="tot"></div><div id="msg"></div></div>
+<div id="rows"></div>
+</section>
+
+<div class="ft">طراح آزمون: نسرین قنواتی</div>
+</div>
+<script>
+const KEY='qz_ghanavati_seq_v1',WT=[3.33,3.33,3.34],DUR=20*60*1000;
+let st=null,tm=null,lock=false;
+const $=id=>document.getElementById(id);
+const P=s=>String(s).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]).replace(/\./g,'٫');
+const R=(a,b)=>a+Math.floor(Math.random()*(b-a+1));
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=R(0,i);[a[i],a[j]]=[a[j],a[i]]}return a};
+const M=n=>n<0?'−'+P(-n):P(n);
+const lin=(a,b)=>(a==1?'x':M(a)+'x')+(b?(b>0?' + ':' − ')+P(Math.abs(b)):'');
+const L=h=>`<span dir="ltr">${h}</span>`;
+const S=(a,b)=>{const[u,v]=[a,b].sort((x,y)=>x-y);return L(`x = ${M(u)} ,&nbsp; x = ${M(v)}`)};
+const X=v=>L(`x = ${M(v)}`);
+const ld=()=>{try{return JSON.parse(localStorage.getItem(KEY))}catch(e){return null}};
+const sv=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const show=i=>[0,1,2].forEach(k=>$('s'+k).hidden=k!==i);
+function mk(t,ans,pool){const w=[...new Set(pool)].filter(x=>x!==ans).slice(0,3);const o=shuf([ans,...w]);return{t,o,c:o.indexOf(ans)}}
+
+const sgn=v=>[-1,1][R(0,1)]*v;
+const N=v=>L(M(+v.toFixed(1)));
+const lx=(a,b)=>(a===1?'x':M(a)+'x')+(b?(b>0?' + ':' − ')+P(Math.abs(b)):'');
+function mkn(t,a,pool,u){const f=v=>N(v)+(u?' '+u:'');
+ const base=[...new Set(shuf(pool).filter(isFinite).map(v=>+v.toFixed(1)).filter(v=>v!==a))];
+ const ex=[a+1,a-1,a+2,a-2,a+3].filter(v=>!base.includes(v));
+ const o=shuf([a,...base.concat(ex).slice(0,3)].map(f));return{t,o,c:o.indexOf(f(a))}}
+const seq=a=>`<div class="eq" dir="ltr">${a.map(M).join(' , ')} , …</div>`;
+
+function arA(){const t1=R(-8,10),d=sgn(R(2,7)),p=R(2,5),q=p+R(3,6),n=R(15,30),tp=t1+(p-1)*d,tq=t1+(q-1)*d;
+ return mkn(`در یک دنبالهٔ حسابی، جملهٔ ${P(p)}ام برابر ${N(tp)} و جملهٔ ${P(q)}ام برابر ${N(tq)} است. جملهٔ ${P(n)}ام این دنباله کدام است؟`,t1+(n-1)*d,[t1+n*d,t1+(n-2)*d,t1-(n-1)*d,tp+(n-p)*(d+1),t1+(n-1)*(d+1),tq+(n-q)*d+tp])}
+function arB(){const a=R(-10,10),d=sgn(R(2,6)),k=R(3,6),j=R(2,k),b=a+(k+1)*d;
+ return mkn(`بین ${N(a)} و ${N(b)} تعداد ${P(k)} واسطهٔ حسابی درج می‌کنیم. واسطهٔ ${P(j)}ام (از سمت ${N(a)}) کدام است؟`,a+j*d,[a+(j-1)*d,a+(j+1)*d,a+j*(b-a)/k,b-j*d,a+j*(b-a)/(k+2)])}
+function arC(){const t1=R(-5,9),d=R(2,7),n=R(20,60),v=t1+(n-1)*d;
+ return mkn(`در دنبالهٔ حسابی ${seq([t1,t1+d,t1+2*d])} جملهٔ چندم برابر ${N(v)} است؟`,n,[n-1,n+1,n+2,Math.round(v/d),n-2])}
+function gen1(){return [arA,arB,arC][R(0,2)]()}
+
+function gmA(){const t1=[1,2,3,4,5,-2,-3][R(0,6)],r=[2,3,-2][R(0,2)],p=R(2,3),q=p+[1,3][R(0,1)],n=R(5,8),tp=t1*r**(p-1),tq=t1*r**(q-1);
+ return mkn(`در یک دنبالهٔ هندسی، جملهٔ ${P(p)}ام برابر ${N(tp)} و جملهٔ ${P(q)}ام برابر ${N(tq)} است. جملهٔ ${P(n)}ام این دنباله کدام است؟`,t1*r**(n-1),[t1*r**n,t1*r**(n-2),t1*(-r)**(n-1),t1+(n-1)*r,t1*r*(n-1),tp*r**(n-p+1)])}
+function gmB(){const a=[1,2,3,4,5,-2,-3][R(0,6)],r=R(2,3),b=a*r**4;
+ return mkn(`بین ${N(a)} و ${N(b)} سه واسطهٔ هندسی درج می‌کنیم. واسطهٔ وسط کدام است؟`,a*r*r,[(a+b)/2,a*r,a*r**3,-a*r*r,b/2])}
+function gmC(){const[nu,de]=[[4,5],[3,4],[9,10],[1,2]][R(0,3)],n=de===10?2:R(2,3),P0=de**n*R(2,8),pc=100-100*nu/de,a=P0*nu**n/de**n;
+ return mkn(`علی دوچرخه‌ای را به قیمت ${N(P0)} هزار تومان خرید. قیمت این دوچرخه در هر سال ${P(pc)} درصد نسبت به سال قبل کاهش می‌یابد. پس از ${P(n)} سال قیمت آن چند هزار تومان خواهد بود؟`,a,[P0*(1-n*pc/100),P0*(nu/de)**(n-1),P0*(nu/de)**(n+1),P0*(1-pc/100)*n,P0*(1-pc/100)].filter(v=>v>0))}
+function gmD(){const c=[2,3,5][R(0,2)],r=R(2,3),n=R(6,9),v=c*r**(n-1);
+ return mkn(`در روز اول یک همه‌گیری، ${P(c)} نفر جدید به یک بیماری مبتلا می‌شوند و تعداد مبتلایان جدید هر روز ${P(r)} برابر روز قبل است. در روز چندم تعداد مبتلایان جدید ${N(v)} نفر می‌شود؟`,n,[n-1,n+1,n+2,n-2])}
+function gen2(){return [gmA,gmB,gmC,gmD][R(0,3)]()}
+
+function sum3(){const t1=R(-6,8),d=sgn(R(2,6)),n=R(8,20),S1=3*t1+3*d,S2=3*t1+12*d;
+ return mkn(`در یک دنبالهٔ حسابی مجموع سه جملهٔ اول برابر ${N(S1)} و مجموع سه جملهٔ بعدی (جملات چهارم تا ششم) برابر ${N(S2)} است. جملهٔ ${P(n)}ام این دنباله کدام است؟`,t1+(n-1)*d,[t1+n*d,t1+(n-2)*d,t1+(n-1)*(d+1),t1+(n-1)*2*d,S1/3+(n-2)*d])}
+function xap(){for(let n=0;n<200;n++){const x0=R(1,6),t=R(2,12),d=R(2,5),v=[t,t+d,t+2*d],al=[R(1,4),R(1,4),R(1,4)];
+ if(2*al[1]-al[0]-al[2]===0)continue;const be=v.map((y,i)=>y-al[i]*x0),e=al.map((a,i)=>L(`(${lx(a,be[i])})`));
+ return mkn(`مقدار x را طوری بیابید که سه عدد ${e[0]}، ${e[1]} و ${e[2]} به‌ترتیب سه جملهٔ متوالی یک دنبالهٔ حسابی باشند.`,x0,[x0+1,x0-1,2*x0,x0+2,x0*d])}
+ return sum3()}
+function xgp(){const x0=R(1,8),g=R(1,4),r=R(2,3),e=[g-x0,g*r-x0,g*r*r-x0].map(b=>L(`(${lx(1,b)})`));
+ return mkn(`مقدار x را طوری بیابید که سه عدد ${e[0]}، ${e[1]} و ${e[2]} به‌ترتیب سه جملهٔ متوالی یک دنبالهٔ هندسی باشند.`,x0,[x0+1,x0-1,x0+2,x0-2,2*x0,g])}
+function gen3(){return [sum3,xap,xgp][R(0,2)]()}
+
+function hA(){for(let n=0;n<500;n++){const a=R(3,14),d=R(1,9),S=3*a,Pr=a*(a*a-d*d);if(Pr===0)continue;
+ return mkn(`سه عدد، سه جملهٔ متوالی یک دنبالهٔ حسابی‌اند. مجموع این سه عدد ${N(S)} و حاصل‌ضرب آن‌ها ${N(Pr)} است. بزرگ‌ترین این سه عدد کدام است؟`,a+d,[a-d,a,a+2*d,a+d+1,a+d-1,d,Pr/a])}
+ return hB()}
+function hB(){const r=R(2,4),k=R(1,4),a=r*k,S=k*(1+r+r*r),Pr=a**3;
+ return mkn(`سه عدد مثبت، سه جملهٔ متوالی یک دنبالهٔ هندسی‌اند. مجموع این سه عدد ${N(S)} و حاصل‌ضرب آن‌ها ${N(Pr)} است. بزرگ‌ترین این سه عدد کدام است؟`,r*a,[k,a,S-a,a+r,r*r*a,S-k])}
+function hC(){for(let n=0;n<30000;n++){const a=R(6,16),d0=R(1,6),g=R(1,8),r=R(2,4),p=g-(a-d0),q=g*r-a,s=g*r*r-(a+d0),d1=p-s-d0;
+ if(d0>=a||p<0||q<0||s<0||p>20||q>20||s>20||d1>=0)continue;
+ return mkn(`سه عدد، سه جملهٔ متوالی یک دنبالهٔ حسابی با مجموع ${N(3*a)} هستند. اگر به عدد اول ${N(p)} واحد، به عدد دوم ${N(q)} واحد و به عدد سوم ${N(s)} واحد اضافه کنیم، سه عدد حاصل، سه جملهٔ متوالی یک دنبالهٔ هندسی می‌شوند. اگر قدرنسبت (اختلاف مشترک) دنبالهٔ حسابی مثبت باشد، مقدار آن کدام است؟`,d0,[-d1,d0+1,d0-1,g,a-d0,d0+2])}
+ return hB()}
+function genAll(){const m=shuf([arA,arB,arC,gmA,gmB,gmC,gmD,sum3,xap,xgp]);return [m[0](),m[1](),[hA,hB,hC][R(0,2)]()]}
+
+function hid(s){let h=5381;s=s.replace(/\s+/g,'').toLowerCase();for(const ch of s)h=((h*33)^ch.charCodeAt(0))>>>0;return 'sqn'+h.toString(16)+s.length}
+async function getDb(){try{if(!window.claude)return null;return await Promise.race([claude.use('db'),new Promise(r=>setTimeout(()=>r(null),4000))])}catch(e){return null}}
+
+async function start(){
+ const f=$('fn').value.trim(),l=$('ln').value.trim(),er=$('err');
+ if(f.length<2||l.length<2){er.textContent='نام و نام خانوادگی را کامل وارد کنید.';return}
+ $('go').disabled=true;er.textContent='';
+ const id=hid(f+l),db=await getDb();
+ if(db){try{const s=await db.doc('claims/'+id).get();if(s.exists){er.textContent='با این نام قبلاً در آزمون شرکت شده است.';$('go').disabled=false;return}}catch(e){}}
+ st={f,l,id,q:genAll(),a:[null,null,null],i:0,t0:Date.now(),sw:0,done:false};
+ sv();if(db){try{await db.doc('claims/'+id).set({t:Date.now()})}catch(e){}}
+ runQ();
+}
+function tick(){const r=DUR-(Date.now()-st.t0);if(r<=0){finish(true);return}
+ const m=Math.floor(r/60000),s=Math.floor(r%60000/1000);$('tmr').textContent=P(String(m).padStart(2,'0'))+':'+P(String(s).padStart(2,'0'));$('tmr').classList.toggle('low',r<120000);$('bar').style.width=(r/DUR*100)+'%'}
+function runQ(){
+ if(st.done)return;
+ while(st.i<3&&st.a[st.i]!==null)st.i++;
+ if(st.i>=3)return finish(false);
+ show(1);lock=false;clearInterval(tm);tm=setInterval(tick,500);tick();
+ const i=st.i,q=st.q[i];
+ $('qn').textContent=`سؤال ${P(i+1)} از ${P(3)}`;$('qt').innerHTML=q.t;
+ const o=$('opts');o.innerHTML='';
+ q.o.forEach((h,k)=>{const b=document.createElement('button');b.className='opt';b.innerHTML=h;b.onclick=()=>pick(k,b);o.appendChild(b)});
+}
+function pick(k,b){if(lock||st.done)return;lock=true;st.a[st.i]=k;b.classList.add('sel');document.querySelectorAll('.opt').forEach(x=>x.disabled=true);sv();setTimeout(runQ,350)}
+function finish(tu){
+ if(!st.done){st.done=true;st.tu=!!tu;st.t1=Math.min(Date.now(),st.t0+DUR);clearInterval(tm);
+  st.sc=+st.a.reduce((s,a,i)=>s+(a===st.q[i].c?WT[i]:0),0).toFixed(2);sv();saveDb()}
+ report();
+}
+async function saveDb(){const db=await getDb();if(!db)return;try{await db.doc('results/'+st.id).set({name:st.f+' '+st.l,score:st.sc,answers:st.a,switches:st.sw,seconds:Math.round((st.t1-st.t0)/1000),timeUp:!!st.tu})}catch(e){}}
+function report(){
+ show(2);clearInterval(tm);
+ $('who').textContent=st.f+' '+st.l;
+ const sec=Math.round((st.t1-st.t0)/1000);
+ $('meta').textContent=`زمان صرف‌شده: ${P(String(Math.floor(sec/60)).padStart(2,'0'))}:${P(String(sec%60).padStart(2,'0'))}`+(st.tu?' (پایان زمان آزمون)':'');
+ $('tot').textContent=P(st.sc)+' / '+P(10);
+ $('msg').textContent=st.sc>=8?'عالی':st.sc>=5?'قابل قبول، با تمرین بیشتر بهتر هم می‌شود':'نیاز به مرور بیشتر';
+ $('rows').innerHTML=st.q.map((q,i)=>{const a=st.a[i],ok=a===q.c;
+  return `<div class="cd rq ${ok?'ok':''}"><b>سؤال ${P(i+1)}</b> <span class="${ok?'ok-t':'bad-t'}">${ok?'درست':a===null?'بدون پاسخ':'نادرست'}</span> <span class="mu">(نمره: ${P(ok?WT[i]:0)} از ${P(WT[i])})</span><div class="qt">${q.t}</div>
+  <div class="row">پاسخ شما: ${a===null?'—':q.o[a]}</div>${ok?'':`<div class="row">پاسخ درست: ${q.o[q.c]}</div>`}</div>`}).join('');
+}
+$('go').onclick=start;
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&st&&!st.done&&!$('s1').hidden)tick()});
+['contextmenu','copy','cut','paste','dragstart'].forEach(ev=>document.addEventListener(ev,e=>{if(!(e.target&&e.target.tagName==='INPUT'))e.preventDefault()}));
+document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&'cusap'.includes(e.key.toLowerCase())&&e.target.tagName!=='INPUT')e.preventDefault()});
+st=ld();
+if(st){if(st.done)report();else if(Date.now()-st.t0>=DUR)finish(true);else runQ()}else show(0);
+</script></body></html>
